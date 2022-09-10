@@ -6,8 +6,9 @@ import AddIcon from '@mui/icons-material/Add';
 
 function Practise() {
 
-   const BlueButton = styled(Button)({
-        backgroundColor: 'skyblue',
+   const BlueButton = styled(Button)(({theme}) => ({
+        // backgroundColor: 'skyblue',
+        backgroundColor: theme.palette.otherColor.main,
         color: '#888',
         margin: 5,
         '&:hover':{
@@ -17,7 +18,7 @@ function Practise() {
           backgroundColor: 'gray',
           color: 'white'
         }
-  });
+  }));
 
   return (
     <div>
