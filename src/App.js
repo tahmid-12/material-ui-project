@@ -1,21 +1,25 @@
 // import Practise from "./Practise";
-// import { ThemeProvider } from "@mui/material";
-// import { theme } from './theme';
+import { ThemeProvider } from "@mui/material";
+import { theme } from './theme';
 import Navbar from "./components/Navbar";
 import Feed from "./components/Feed";
 import Rightbar from "./components/Rightbar";
+import Sidebar from "./components/Sidebar";
+import { Box, Stack } from "@mui/system";
 
 function App() {
   
   return (
-    <div>
-      {/* <ThemeProvider theme={theme}>
-        <Practise />
-      </ThemeProvider> */}
-      <Navbar />
-      <Feed />
-      <Rightbar />
-    </div>
+    <ThemeProvider theme={theme}>
+      <Box>
+        <Navbar />
+        <Stack direction="row" spacing={2} justifyContent="space-around">
+          <Sidebar />
+          <Feed />
+          <Rightbar />
+        </Stack>
+      </Box>
+    </ThemeProvider>
   );
 }
 
