@@ -45,7 +45,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
         <StyledToolbar>
             <Typography variant="h6" sx={{ 
                 display: {
