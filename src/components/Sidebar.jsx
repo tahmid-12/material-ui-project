@@ -20,81 +20,85 @@ const Sidebar = () => {
                 sm: "block"
             }
          }}>
-        <List>
 
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
-              <ListItemIcon>
-                <HomeIcon />
-              </ListItemIcon>
-              <ListItemText primary="Homepage" />
-            </ListItemButton>
-          </ListItem>
+          <Box position="fixed">
 
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#pages">
-              <ListItemIcon>
-                <HomeIcon />
-              </ListItemIcon>
-              <ListItemText primary="Pages" />
-            </ListItemButton>
-          </ListItem>
+          <List>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#home">
+                    <ListItemIcon>
+                      <HomeIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Homepage" />
+                  </ListItemButton>
+                </ListItem>
 
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#groups">
-              <ListItemIcon>
-                <GroupsIcon />
-              </ListItemIcon>
-              <ListItemText primary="Groups" />
-            </ListItemButton>
-          </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#pages">
+                    <ListItemIcon>
+                      <HomeIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Pages" />
+                  </ListItemButton>
+                </ListItem>
 
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#marketplace">
-              <ListItemIcon>
-                <StorefrontIcon />
-              </ListItemIcon>
-              <ListItemText primary="Marketplace" />
-            </ListItemButton>
-          </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#groups">
+                    <ListItemIcon>
+                      <GroupsIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Groups" />
+                  </ListItemButton>
+                </ListItem>
 
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#friends">
-              <ListItemIcon>
-                <PersonIcon />
-              </ListItemIcon>
-              <ListItemText primary="Friends" />
-            </ListItemButton>
-          </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#marketplace">
+                    <ListItemIcon>
+                      <StorefrontIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Marketplace" />
+                  </ListItemButton>
+                </ListItem>
 
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#settings">
-              <ListItemIcon>
-                <SettingsIcon />
-              </ListItemIcon>
-              <ListItemText primary="Settings" />
-            </ListItemButton>
-          </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#friends">
+                    <ListItemIcon>
+                      <PersonIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Friends" />
+                  </ListItemButton>
+                </ListItem>
 
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#profile">
-              <ListItemIcon>
-                <AccountCircleIcon />
-              </ListItemIcon>
-              <ListItemText primary="Profile" />
-            </ListItemButton>
-          </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#settings">
+                    <ListItemIcon>
+                      <SettingsIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Settings" />
+                  </ListItemButton>
+                </ListItem>
 
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#profile">
-              <ListItemIcon>
-                <ModeNightIcon />
-              </ListItemIcon>
-              <Switch />
-            </ListItemButton>
-          </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#profile">
+                    <ListItemIcon>
+                      <AccountCircleIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Profile" />
+                  </ListItemButton>
+                </ListItem>
 
-        </List>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#profile">
+                    <ListItemIcon>
+                      <ModeNightIcon />
+                    </ListItemIcon>
+                    <Switch />
+                  </ListItemButton>
+                </ListItem>
+
+          </List>
+
+          </Box>
     </Box>
   )
 }
